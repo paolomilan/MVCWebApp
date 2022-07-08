@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome</h2>
+
+<ul>
+    <!--Loop that displays the "Hello" from the HelloWorldController.cs "numTimes".
+        browser input would be /HelloWorld/Welcome?name={name}&numtimes={int}
+        The '?' is a separator
+        The '&' separates field-value pairs
+    -->
+    @for (int i = 0; i < (int)ViewData["NumTimes"]!; i++)
+    {
+        <li>@ViewData["Message"]</li>
+    }
+</ul>

@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "MVC Web App List";
+}
+<!--
+The Title property of the ViewData dictionary is set above to 
+"MVC Web App List". The "Title" corresponds to <title> HTML element 
+in the Shared/_Layout.cshtml page 
+-->
+
+<!--
+A view template should not:
+    - Do business logic
+    - Interact with a database directly
+
+A view template should work only with the data that is provided by the controller.
+Maintaining it separate helps keep the code:
+    - Clean
+    - Testable
+    - Maintainable
+-->
+
+ <!--Primary Heading-->
+<h2>My MVC Web App</h2>
+ <!--Secondary heading-->
+<p>Hello from our View Template using Razor Pages!</p>
